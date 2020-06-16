@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form action='/' method='post'>
+
+        <input placeholder="User" name='User'>
+        <input placeholder="Date" name='Date'>
+        <input placeholder="Stock Name" name='Stock_Name'>
+        <input placeholder="Buy Price" name='Price'>
+        <input placeholder="Sell Price" name='Sell_Price'>
+        <input placeholder="Quantity" name='Quantity'>
+        <input placeholder="Description" name='Description'>
+        <input type="Submit" value="Submit">
+
+    </form>
+
+    {% for line in data %}
+        <p>{{ line }}</p>
+    {% endfor %}
+
+</body>
+
+</html>
